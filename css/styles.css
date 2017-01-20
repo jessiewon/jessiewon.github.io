@@ -189,6 +189,12 @@ fieldset[disabled] .btn-dark.active {
   border-color: #2BBFD2;
 }
 
+.tooltip .tooltip-inner {
+  background-color: #2B2B2B;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+
 /* ======= Waypoints ======= */
 
 .wp1,
@@ -247,9 +253,9 @@ fieldset[disabled] .btn-dark.active {
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
 }
-.delay-4s {
-    animation-delay: 4s;
-    -webkit-animation-delay: 4s;
+.delay-1-5s {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
 }
 
 /*----------------------------------------------------------------
@@ -450,8 +456,8 @@ header .about:hover {
 header .about .main p {
   padding-bottom: 20px;
 }
-header .about .about-pics .col-md-6 {
-  padding: 0 8px;
+header .about .about-pics .col-sm-4 {
+  padding: 0 5px;
 }
 @media (min-width: 768px) {
   header {
@@ -478,6 +484,9 @@ header .about .about-pics .col-md-6 {
   }
   header .about .main p {
   /*text-align: left;*/
+  }
+  header .about .about-pics .col-md-6 {
+  padding: 0 8px;
   }
 }
 
@@ -516,7 +525,7 @@ section h3.section-subheading {
 
 .skills h2 {
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
@@ -560,13 +569,39 @@ section h3.section-subheading {
   margin-bottom: 15px;
   margin-left: 0;
   float: left;
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
 }
-@media (min-width: 992px) {
-  .product-info-details .product-icons li {
-    width: 100%;
-  }
+
+.circle {
+  margin: 6px 20px 15px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+.circle canvas {
+  vertical-align: top;
+}
+.circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+.circle span {
+  display: block;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 15px;
 }
 
 /*----------------------------------------------------------------
@@ -625,16 +660,22 @@ section h3.section-subheading {
   -moz-transition: all ease 0.4s;
 }
 .timeline > li .timeline-panel:before {
+  position: absolute;
+  display: inline-block;
   border-left-width: 0;
   border-right-width: 10px;
   left: -10px;
   right: auto;
+  content: " ";
 }
 .timeline > li .timeline-panel:after {
+  position: absolute;
+  display: inline-block;
   border-left-width: 0;
   border-right-width: 9px;
   left: -9px;
   right: auto;
+  content: " ";
 }
 .timeline > li .timeline-panel:hover {
   background-color: rgba(34, 34, 34, 1.0);
