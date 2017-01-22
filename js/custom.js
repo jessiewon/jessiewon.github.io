@@ -98,9 +98,9 @@ $(function() {
     $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
   });
   $('.python.circle').circleProgress({
-    value: 0.3
+    value: 0.6
   }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
+    $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
   });
   $('.cplusplus.circle').circleProgress({
     value: 0.8

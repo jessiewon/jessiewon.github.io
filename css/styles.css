@@ -624,6 +624,7 @@ section h3.section-subheading {
   list-style: none;
   padding: 0;
   position: relative;
+  overflow-x: 0;
 }
 .timeline:before {
   top: 0;
