@@ -84,16 +84,10 @@ $(function() {
 })(jQuery); // End of use strict
 
 
-/* Examples */
+/* Skills progress circles */
 (function($) {
-  /*
-   * Example 2:
-   *
-   * - default gradient
-   * - listening to `circle-animation-progress` event and display the animation progress: from 0 to 100%
-   */
   $('.java.circle').circleProgress({
-    value: 0.3
+    value: 0.6
   }).on('circle-animation-progress', function(event, progress) {
     $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
   });

@@ -28,9 +28,6 @@ body {
 .text-muted {
   color: #777777;
 }
-.text-primary {
-  color: #2BBFD2;
-}
 .text-light {
   color: #DBDBDB;
 }
@@ -81,9 +78,6 @@ hr.light-small {
   height: 6px;
   width: 98%;
   opacity: 0.5;
-}
-hr.dark {
-  border-top: 1px dashed #222222;
 }
 .img-centered {
   margin: 0 auto;
@@ -266,7 +260,7 @@ fieldset[disabled] .btn-dark.active {
   background-color: #222222;
   border-color: transparent;
 }
-.navbar-custom .navbar-brand {
+/*.navbar-custom .navbar-brand {
   color: #2BBFD2;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
@@ -275,7 +269,7 @@ fieldset[disabled] .btn-dark.active {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color: #2BBFD2;
-}
+}*/
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
@@ -534,22 +528,6 @@ section h3.section-subheading {
   margin-bottom: 15px;
   overflow: hidden;
 }
-.skills .skills-programming ul {
-  padding-top: 10px;
-  padding-left: 0;
-}
-.skills .skills-programming li {
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 20px;
-  list-style-type: none;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  margin-left: 0;
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-}
 .skills .skills-design h3{
   margin-top: 18px;
   font-size: 40px;
@@ -571,6 +549,11 @@ section h3.section-subheading {
   float: left;
   width: 100%;
   box-sizing: border-box;
+}
+@media (max-width: 1068px) {
+  .skills .skills-design li {
+    width: 50%;
+  }
 }
 
 .circle {
@@ -1065,7 +1048,7 @@ ul.social-buttons li.instagram a:focus {
 }
 ul.social-buttons li.linkedin a:hover,
 ul.social-buttons li.linkedin a:focus {
-  background-color: #5D8CB9;
+  background-color: #72AEE7;
 }
 ul.social-buttons li.github a:hover,
 ul.social-buttons li.github a:focus {
