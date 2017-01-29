@@ -86,54 +86,34 @@ $(function() {
 
 /* Skills progress circles */
 (function($) {
-  $('.java.circle').circleProgress({
-    value: 0.6
-  }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
-  });
-  $('.python.circle').circleProgress({
-    value: 0.6
-  }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
-  });
-  $('.cplusplus.circle').circleProgress({
-    value: 0.8
-  }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
-  });
-  $('.vba.circle').circleProgress({
-    value: 0.7
-  }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
-  });
-  $('.javascript.circle').circleProgress({
+  $('.forty.circle').circleProgress({
     value: 0.4
   }).on('circle-animation-progress', function(event, progress) {
     $(this).find('strong').html(Math.round(40 * progress) + '<i>%</i>');
   });
-  $('.php.circle').circleProgress({
-    value: 0.7
-  }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
-  });
-  $('.sql.circle').circleProgress({
-    value: 0.8
-  }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
-  });
-  $('.matlab.circle').circleProgress({
+  $('.fifty.circle').circleProgress({
     value: 0.5
   }).on('circle-animation-progress', function(event, progress) {
     $(this).find('strong').html(Math.round(50 * progress) + '<i>%</i>');
   });
-  $('.html.circle').circleProgress({
+  $('.sixty.circle').circleProgress({
+    value: 0.6
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
+  });
+  $('.seventy.circle').circleProgress({
+    value: 0.7
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
+  });
+  $('.eighty.circle').circleProgress({
+    value: 0.8
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
+  });
+  $('.ninety.circle').circleProgress({
     value: 0.9
   }).on('circle-animation-progress', function(event, progress) {
     $(this).find('strong').html(Math.round(90 * progress) + '<i>%</i>');
-  });
-  $('.css.circle').circleProgress({
-    value: 0.85
-  }).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(Math.round(85 * progress) + '<i>%</i>');
   });
 })(jQuery);
