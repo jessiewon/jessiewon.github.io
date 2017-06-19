@@ -260,16 +260,6 @@ fieldset[disabled] .btn-dark.active {
   background-color: #222222;
   border-color: transparent;
 }
-/*.navbar-custom .navbar-brand {
-  color: #2BBFD2;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-}
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-  color: #2BBFD2;
-}*/
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
@@ -397,7 +387,7 @@ fieldset[disabled] .btn-dark.active {
 header {
   background-image: url('../img/headerbackground1.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -414,7 +404,7 @@ header .intro-text {
   padding-bottom: 100px;
 }
 header .intro-text h1 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 500;
   font-size: 50px;
   line-height: 50px;
@@ -429,30 +419,6 @@ header .intro-text h2 {
   margin-top: 0;
   margin-bottom: 25px;
 }
-header .about {
-  background-color: rgba(34, 34, 34, 0.85);
-  padding: 50px 40px;
-  transition: all ease 0.3s;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-}
-header .about h1{
-  text-transform: uppercase;
-  font-size: 35px;
-}
-header .about img{
-  margin-bottom: 20px;
-  /*border: 3px solid #fff;*/
-}
-header .about:hover {
-  background-color: rgba(34, 34, 34, 0.95);
-}
-header .about .main p {
-  padding-bottom: 20px;
-}
-header .about .about-pics .col-sm-4 {
-  padding: 0 5px;
-}
 @media (min-width: 768px) {
   header {
     padding-top: 6%;
@@ -462,25 +428,12 @@ header .about .about-pics .col-sm-4 {
     padding-bottom: 200px;
   }
   header .intro-text h1 {
-    text-transform: uppercase;
-    font-weight: 500;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 0;
   }
   header .intro-text h2 {
-    text-transform: none;
-    font-weight: 500;
     font-size: 25px;
     line-height: 40px;
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
-  header .about .main p {
-  /*text-align: left;*/
-  }
-  header .about .about-pics .col-md-6 {
-  padding: 0 8px;
   }
 }
 
@@ -514,87 +467,13 @@ section h3.section-subheading {
 }
 
 /*----------------------------------------------------------------
-    Skills
-----------------------------------------------------------------*/
-
-.skills h2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.skills .skills-programming {
-  margin-bottom: 15px;
-  overflow: hidden;
-}
-.skills .skills-design h3{
-  margin-top: 18px;
-  font-size: 40px;
-  font-weight: 600;
-}
-.skills .skills-design ul {
-  padding-top: 10px;
-  padding-left: 0;
-  padding-bottom: 30px;
-}
-.skills .skills-design li {
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 20px;
-  list-style-type: none;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  margin-left: 0;
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-}
-@media (max-width: 1068px) {
-  .skills .skills-design li {
-    width: 50%;
-  }
-}
-
-.circle {
-  margin: 6px 20px 15px;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  line-height: 1.2;
-}
-.circle canvas {
-  vertical-align: top;
-}
-.circle strong {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 30px;
-}
-.circle strong i {
-  font-style: normal;
-  font-size: 0.6em;
-  font-weight: normal;
-}
-.circle span {
-  display: block;
-  font-weight: 300;
-  font-size: 17px;
-  margin-top: 15px;
-}
-
-/*----------------------------------------------------------------
     Experience
 ----------------------------------------------------------------*/
 
 .experience {
   background-image: url('../img/header3background.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -777,14 +656,6 @@ section h3.section-subheading {
 ----------------------------------------------------------------*/
 
 .resume {
-  /*background-image: url('../img/header4background.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;*/
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -958,7 +829,7 @@ body {
 .contact {
   background-image: url('../img/biathlon2.png');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1004,7 +875,6 @@ ul.social-buttons {
 }
 ul.social-buttons li a {
   display: block;
-  /*background-color: #123456;*/
   height: 50px;
   width: 50px;
   border-radius: 100%;
@@ -1018,16 +888,6 @@ ul.social-buttons li a {
 ul.social-buttons i {
   color: #fff;
 }
-/*ul.social-buttons i:hover {
-  position: relative; 
-  top: -5px;
-  cursor: pointer;
-}*/
-/*ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-  background-color: #2BBFD2;
-}*/
 
 ul.social-buttons li.twitter a:hover,
 ul.social-buttons li.twitter a:focus {
@@ -1053,17 +913,4 @@ ul.social-buttons li.linkedin a:focus {
 ul.social-buttons li.github a:hover,
 ul.social-buttons li.github a:focus {
   background-color: #979797;
-}
-
-.test {
-  background-image: url('../img/swim.jpg');
-  background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  color: #ffffff;
 }
