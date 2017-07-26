@@ -251,6 +251,18 @@ fieldset[disabled] .btn-dark.active {
     animation-delay: 1.5s;
     -webkit-animation-delay: 1.5s;
 }
+.delay-2s {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+.delay-2-5s {
+    animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+.delay-3s {
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
 
 /*----------------------------------------------------------------
     Navigation Bar
@@ -464,6 +476,13 @@ section h3.section-subheading {
   section {
     padding: 80px 25px;
   }
+}
+
+/*----------------------------------------------------------------
+    About
+----------------------------------------------------------------*/
+.about img {
+  width: 100%;
 }
 
 /*----------------------------------------------------------------
