@@ -26,6 +26,14 @@ body {
   overflow-x: hidden;
   font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+@font-face {
+  font-family: "Crunchy";
+  src: url('Hickory Jack.ttf');
+}
+.special-font {
+  font-family: "Crunchy";
+  font-size: xx-large;
+}
 .text-muted {
   color: #777777;
 }
@@ -760,4 +768,53 @@ ul.social-buttons li.linkedin a:focus {
 ul.social-buttons li.github a:hover,
 ul.social-buttons li.github a:focus {
   background-color: #979797;
+}
+
+.eye{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    box-shadow: 50px 0px 0px 0px rgba(255,255,255,0.8);
+    position: relative;
+}
+
+.eye:after{
+    background-color: #222222;
+    width: 15px;
+    height: 15px;
+    box-shadow: 50px 0px 0px 0px #222222;
+    border-radius: 50%;
+    left: 9px;
+    top: 15px;
+    position: absolute;
+    content: "";
+    -webkit-animation: eyeball 1.5s linear infinite alternate;
+       -moz-animation: eyeball 1.5s linear infinite alternate;
+            animation: eyeball 1.5s linear infinite alternate;
+}
+@-webkit-keyframes eyeball{
+    0%{left: 20px;}
+    100%{left: 1px;}
+}
+@-moz-keyframes eyeball{
+    0%{left: 20px;}
+    100%{left: 1px;}
+}
+@keyframes eyeball{
+    0%{left: 20px;}
+    100%{left: 1px;}
+}
+
+.preloader-page {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    z-index: 99999;
+    position: fixed;
+}
+
+.preloader-object {
+    margin-left: 50%;
+    margin-top: 25%;
 }

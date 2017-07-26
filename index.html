@@ -27,6 +27,12 @@
 
 <body id="page-top" class="index">
 
+  <div class="preloader-page">
+    <div class="preloader-object">
+      <div class="eye"></div>
+    </div>
+  </div>
+
   <!-- Navigation -->
   <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container">
@@ -143,7 +149,7 @@
               <div class="section-heading">Portfolio</div>
               <div class="section-subheading text-muted">Take a look at some of my work.</div>
               <br />
-              <h1>Portfolio section in progress - will be updated soon :)</h1>
+              <h1>The portfolio section is currently being updated - stay tuned!</h1>
           </div>
       </div>
     </div>
@@ -454,6 +460,12 @@
 
   <!-- Custom JavaScript -->
   <script src="js/custom.js"></script>
+
+  <script>
+      jQuery(window).load(function(){
+          jQuery(".preloader-page").fadeOut(500);
+      });
+  </script>
 
   <!--Google Analytics-->
   <script>
