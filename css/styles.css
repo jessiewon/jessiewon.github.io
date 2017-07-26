@@ -519,7 +519,8 @@ section .section-subheading {
     Portfolio
 ----------------------------------------------------------------*/
 
-#portfolio {
+#portfolio .portfolio-grid {
+  margin-top: 20px;
 }
 #portfolio .portfolio-item {
   margin: 0 0 10px;
