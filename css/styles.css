@@ -5,18 +5,6 @@
     Navigation Bar
     Header
     Footer
-   ================================================
-   COLOUR SCHEME
-   ------------------------------------------------
-    #06344E - navy
-    #fff - white
-    #7C8082 - grey
-    #BFC3C6 - light grey
-
-    #2BBFD2 - bright blue
-    #eeeeee - light gray (background)
-    #D0D0D0 - light gray (text)
-    #222222 - dark gray
    ================================================  */
 
 /*----------------------------------------------------------------
@@ -69,21 +57,11 @@ a.active {
 a i{
   color: #fff;
 }
-hr.light {
-  height: 6px;
-  width: 95%;
-  border-top: 3px double #eeeeee;
-}
-hr.light-small {
-  height: 6px;
-  width: 98%;
-  opacity: 0.5;
-}
 .img-centered {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #eeeeee;
+  background-color: #F7F7F7;
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -187,7 +165,6 @@ fieldset[disabled] .btn-dark.active {
 }
 
 .tooltip .tooltip-inner {
-  background-color: #2B2B2B;
   padding: 10px 15px;
   font-size: 12px;
 }
