@@ -2,6 +2,7 @@
    TABLE OF CONTENTS
    ------------------------------------------------
     General
+    Preloader
     Navigation Bar
     Header
     Footer
@@ -40,13 +41,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #2BBFD2;
+  color: #66B4C5;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #2BBFD2;
+  color: #66B4C5;
 }
 a i{
   color: #fff;
@@ -68,7 +69,7 @@ a i{
 .btn-white {
   color: #fff;
   background-color: transparent;
-  border-color: #fff;
+  border-color: #66B4C5;
   border-width: 2px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -84,32 +85,14 @@ a i{
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
-  color: #222222;
-  background-color: #fff;
-  border-color: #fff;
+  color: #fff;
+  background-color: #66B4C5;
+  border-color: #66B4C5;
 }
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
   background-image: none;
-}
-.btn-white.disabled,
-.btn-white[disabled],
-fieldset[disabled] .btn-white,
-.btn-white.disabled:hover,
-.btn-white[disabled]:hover,
-fieldset[disabled] .btn-white:hover,
-.btn-white.disabled:focus,
-.btn-white[disabled]:focus,
-fieldset[disabled] .btn-white:focus,
-.btn-white.disabled:active,
-.btn-white[disabled]:active,
-fieldset[disabled] .btn-white:active,
-.btn-white.disabled.active,
-.btn-white[disabled].active,
-fieldset[disabled] .btn-white.active {
-  background-color: #2BBFD2;
-  border-color: #2BBFD2;
 }
 .btn-dark {
   color: #fff;
@@ -139,25 +122,6 @@ fieldset[disabled] .btn-white.active {
 .open .dropdown-toggle.btn-dark {
   background-image: none;
 }
-.btn-dark.disabled,
-.btn-dark[disabled],
-fieldset[disabled] .btn-dark,
-.btn-dark.disabled:hover,
-.btn-dark[disabled]:hover,
-fieldset[disabled] .btn-dark:hover,
-.btn-dark.disabled:focus,
-.btn-dark[disabled]:focus,
-fieldset[disabled] .btn-dark:focus,
-.btn-dark.disabled:active,
-.btn-dark[disabled]:active,
-fieldset[disabled] .btn-dark:active,
-.btn-dark.disabled.active,
-.btn-dark[disabled].active,
-fieldset[disabled] .btn-dark.active {
-  background-color: #2BBFD2;
-  border-color: #2BBFD2;
-}
-
 .tooltip .tooltip-inner {
   padding: 10px 15px;
   font-size: 12px;
@@ -239,12 +203,69 @@ fieldset[disabled] .btn-dark.active {
 }
 
 /*----------------------------------------------------------------
+    Preloader
+----------------------------------------------------------------*/
+
+.eye{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    box-shadow: 50px 0px 0px 0px rgba(255,255,255,0.8);
+    position: relative;
+}
+
+.eye:after{
+    background-color: #222222;
+    width: 15px;
+    height: 15px;
+    box-shadow: 50px 0px 0px 0px #222222;
+    border-radius: 50%;
+    left: 9px;
+    top: 15px;
+    position: absolute;
+    content: "";
+    -webkit-animation: eyeball 1.5s linear infinite alternate;
+       -moz-animation: eyeball 1.5s linear infinite alternate;
+            animation: eyeball 1.5s linear infinite alternate;
+}
+@-webkit-keyframes eyeball{
+    0%{left: 20px;}
+    100%{left: 1px;}
+}
+@-moz-keyframes eyeball{
+    0%{left: 20px;}
+    100%{left: 1px;}
+}
+@keyframes eyeball{
+    0%{left: 20px;}
+    100%{left: 1px;}
+}
+
+.preloader-page {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    z-index: 99999;
+    position: fixed;
+}
+
+.preloader-object {
+    margin-left: 50%;
+    margin-top: 25%;
+}
+
+/*----------------------------------------------------------------
     Navigation Bar
 ----------------------------------------------------------------*/
 
 .navbar-custom {
-  background-color: #222222;
-  border-color: transparent;
+  background-color: transparent;
+  padding: 25px 0;
+  -webkit-transition: padding 0.3s;
+  -moz-transition: padding 0.3s;
+  transition: padding 0.3s;
+  border: none;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -272,41 +293,22 @@ fieldset[disabled] .btn-dark.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #666666;
-  outline: none;
-}
-.navbar-custom.affix .nav li a:hover,
-.navbar-custom.affix .nav li a:focus {
-  color: #aaaaaa;
-  outline: none;
-}
-.navbar-custom .navbar-nav > .active > a {
-  border-radius: 0;
   color: #ffffff;
-  background-color: transparent;
+  background-color: #66B4C5;
 }
+.navbar-custom .navbar-nav > .active > a,
 .navbar-custom.affix .navbar-nav > .active > a {
-  border-radius: 0;
-  color: #222222!important;
-  background-color: #ffffff;
-}
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  background-color: transparent;
-}
-.navbar-custom.affix .navbar-nav > .active > a:hover,
-.navbar-custom.affix .navbar-nav > .active > a:focus {
-  color: #727272;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #66B4C5;
 }
 @media (min-width: 768px) {
-  .navbar-custom {
-    background-color: transparent;
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    border: none;
+  .navbar-custom.affix {
+    background-color: #222222;
+    opacity: 0.9;
+    padding: 6px 0;
+  }
+  .navbar-custom.affix .navbar-nav {
+    font-size: 14px;
   }
   .navbar-custom .navbar-nav {
     width: 100%;
@@ -322,22 +324,23 @@ fieldset[disabled] .btn-dark.active {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .navbar-custom .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: #cccccc;
+    background-color: transparent;
+
   }
-  .navbar-custom.affix {
-    background-color: #222222;
-    opacity: 0.9;
-    padding: 6px 0;
+  .navbar-custom .navbar-nav > .active > a {
+    background-color: transparent;
   }
-  .navbar-custom.affix .navbar-nav {
-    font-size: 14px;
+  .navbar-custom .navbar-nav > .active > a:hover,
+  .navbar-custom .navbar-nav > .active > a:focus {
+    color: #cccccc;
+    background-color: transparent;
   }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
+  .navbar-custom.affix .navbar-nav > .active > a {
+    border-bottom: solid 3px #66B4C5;
+    background-color: transparent;
   }
 }
 @media(max-width:768px) {
@@ -359,10 +362,10 @@ fieldset[disabled] .btn-dark.active {
       border-bottom: none;
     }
     .navbar-custom.affix {
-    background-color: #222222;
-    opacity: 0.93;
-    padding: 6px 0;
-  }
+      background-color: #222222;
+      opacity: 0.93;
+      padding: 6px 0;
+    }
 }
 
 
@@ -476,14 +479,14 @@ section .section-subheading {
 .about-section-heading {
   font-size: 30px;
   margin-bottom: 15px;
-  /*color: #22A7BD;*/
+  /*color: #66B4C5;*/
 }
 
 .about-eat {
   font-size: 35px;
   font-weight: 500;
   margin-bottom: 10px;
-  /*color: #577F85;*/
+  /*color: #66B4C5;*/
 }
 
 /*----------------------------------------------------------------
@@ -546,9 +549,12 @@ section .section-subheading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3 {
   margin: 0;
+  color: #66B4C5;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content p {
+  color: #bbbbbb;
 }
 #portfolio * {
   z-index: 2;
@@ -588,7 +594,6 @@ section .section-subheading {
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 10px 5px 30px;
-  font-style: italic;
   font-size: 16px;
 }
 .portfolio-modal .modal-content ul.list-inline {
@@ -706,6 +711,9 @@ footer span.copyright {
   color: #ffffff;
   padding: 5px 0;
 }
+.footer2 i {
+  color: #66B4C5;
+}
 ul.social-buttons {
   margin: 5px 15px 15px 10px;
 }
@@ -715,7 +723,7 @@ ul.social-buttons li a {
   width: 50px;
   border-radius: 100%;
   font-size: 30px;
-  line-height: 50px;
+  line-height: 53px;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -749,53 +757,4 @@ ul.social-buttons li.linkedin a:focus {
 ul.social-buttons li.github a:hover,
 ul.social-buttons li.github a:focus {
   background-color: #979797;
-}
-
-.eye{
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 50%;
-    box-shadow: 50px 0px 0px 0px rgba(255,255,255,0.8);
-    position: relative;
-}
-
-.eye:after{
-    background-color: #222222;
-    width: 15px;
-    height: 15px;
-    box-shadow: 50px 0px 0px 0px #222222;
-    border-radius: 50%;
-    left: 9px;
-    top: 15px;
-    position: absolute;
-    content: "";
-    -webkit-animation: eyeball 1.5s linear infinite alternate;
-       -moz-animation: eyeball 1.5s linear infinite alternate;
-            animation: eyeball 1.5s linear infinite alternate;
-}
-@-webkit-keyframes eyeball{
-    0%{left: 20px;}
-    100%{left: 1px;}
-}
-@-moz-keyframes eyeball{
-    0%{left: 20px;}
-    100%{left: 1px;}
-}
-@keyframes eyeball{
-    0%{left: 20px;}
-    100%{left: 1px;}
-}
-
-.preloader-page {
-    width: 100%;
-    height: 100%;
-    background-color: #222222;
-    z-index: 99999;
-    position: fixed;
-}
-
-.preloader-object {
-    margin-left: 50%;
-    margin-top: 25%;
 }
