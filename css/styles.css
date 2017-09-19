@@ -25,12 +25,6 @@ body {
 .text-muted {
   color: #777777;
 }
-.text-light {
-  color: #DBDBDB;
-}
-.text-dark {
-  color: #222222;
-}
 p {
   font-size: 18px;
   line-height: 1.75;
@@ -443,6 +437,14 @@ section .section-heading {
   font-weight: 300;
   letter-spacing: 3px;
 }
+section .section-heading-light {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
 section .section-subheading {
   font-size: 25px;
   text-transform: none;
@@ -474,12 +476,14 @@ section .section-subheading {
 .about-section-heading {
   font-size: 30px;
   margin-bottom: 15px;
+  /*color: #22A7BD;*/
 }
 
 .about-eat {
   font-size: 35px;
   font-weight: 500;
   margin-bottom: 10px;
+  /*color: #577F85;*/
 }
 
 /*----------------------------------------------------------------
