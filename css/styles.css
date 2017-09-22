@@ -475,7 +475,7 @@ section .section-subheading {
   padding: 100px 50px;
 }
 .about-main-content {
-  width: 100%;
+  width: 80%;
 }
 .about-main-image {
   flex-basis: 50%;
