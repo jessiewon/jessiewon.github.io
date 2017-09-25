@@ -473,6 +473,9 @@ section .section-subheading {
 }
 .about-main {
   padding: 100px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-main-content {
   width: 80%;
@@ -482,9 +485,6 @@ section .section-subheading {
 }
 .about-main-image img {
   display: none;
-}
-.about-main-text {
-  flex-basis: 50%;
 }
 .about-main-hello {
   font-size: 60px;
@@ -519,10 +519,7 @@ section .section-subheading {
     align-items: center;
   }
   .about-main-content {
-    width: 50%;/*
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
+    width: 50%;
   }
   .about-main-image {
     flex-basis: 50%;
