@@ -20,7 +20,7 @@ body {
 }
 @font-face {
   font-family: "Crunchy";
-  src: url('Hickory Jack.ttf');
+  src: url("Hickory Jack.ttf");
 }
 .special-font {
   font-family: "Crunchy";
@@ -44,41 +44,41 @@ a.active {
   outline: none;
 }
 a {
-  color: #5CCBD5;
+  color: #5ccbd5;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #5CCBD5;
+  color: #5ccbd5;
 }
-a i{
+a i {
   color: #fff;
 }
 .img-centered {
   margin: 0 auto;
 }
 .bg-white {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .bg-darkest-gray {
-  background-color: #3D4446;
+  background-color: #3d4446;
   color: #fff;
 }
 .bg-gray {
-  background-color: #6D797D;
+  background-color: #6d797d;
   color: #fff;
 }
 .bg-light-blue {
-  background-color: #CFE9EE;
+  background-color: #cfe9ee;
 }
 .bg-light-gray {
-  background-color: #D0D9DB;
+  background-color: #d0d9db;
 }
 .btn-white {
   color: #fff;
   background-color: transparent;
-  border-color: #5CCBD5;
+  border-color: #5ccbd5;
   border-width: 2px;
   text-transform: uppercase;
   border-radius: 0;
@@ -92,9 +92,9 @@ a i{
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
-  color: #3D4446;
-  background-color: #5CCBD5;
-  border-color: #5CCBD5;
+  color: #fff;
+  background-color: #5ccbd5;
+  border-color: #5ccbd5;
 }
 .btn-white:active,
 .btn-white.active,
@@ -103,8 +103,8 @@ a i{
 }
 .btn-dark {
   color: #fff;
-  background-color: #3D4446;
-  border-color: #3D4446;
+  background-color: #3d4446;
+  border-color: #3d4446;
   border-width: 2px;
   text-transform: uppercase;
   border-radius: 0;
@@ -143,7 +143,7 @@ a i{
 .wp5,
 .wp6,
 .wp6-1 {
-    visibility: hidden;
+  visibility: hidden;
 }
 .bounceIn,
 .bounceInUp,
@@ -164,100 +164,112 @@ a i{
 .swing,
 .pulse,
 .bounce {
-    visibility: visible;
+  visibility: visible;
 }
 .delay-01s {
-    animation-delay: 0.1s;
-    -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
 }
 .delay-02s {
-    animation-delay: 0.2s;
-    -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
 }
 .delay-025s {
-    animation-delay: 0.25s;
-    -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
 }
 .delay-05s {
-    animation-delay: 0.5s;
-    -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 .delay-075s {
-    animation-delay: 0.75s;
-    -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
 }
 .delay-1s {
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 .delay-1-5s {
-    animation-delay: 1.5s;
-    -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
 }
 .delay-2s {
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
 }
 .delay-2-5s {
-    animation-delay: 2.5s;
-    -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
 }
 .delay-3s {
-    animation-delay: 3s;
-    -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
 }
 
 /*----------------------------------------------------------------
     Preloader
 ----------------------------------------------------------------*/
 
-.eye{
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 50%;
-    box-shadow: 50px 0px 0px 0px rgba(255,255,255,0.8);
-    position: relative;
+.eye {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 50px 0px 0px 0px rgba(255, 255, 255, 0.8);
+  position: relative;
 }
 
-.eye:after{
-    background-color: #3D4446;
-    width: 15px;
-    height: 15px;
-    box-shadow: 50px 0px 0px 0px #3D4446;
-    border-radius: 50%;
-    left: 9px;
-    top: 15px;
-    position: absolute;
-    content: "";
-    -webkit-animation: eyeball 1.5s linear infinite alternate;
-       -moz-animation: eyeball 1.5s linear infinite alternate;
-            animation: eyeball 1.5s linear infinite alternate;
+.eye:after {
+  background-color: #3d4446;
+  width: 15px;
+  height: 15px;
+  box-shadow: 50px 0px 0px 0px #3d4446;
+  border-radius: 50%;
+  left: 9px;
+  top: 15px;
+  position: absolute;
+  content: "";
+  -webkit-animation: eyeball 1.5s linear infinite alternate;
+  -moz-animation: eyeball 1.5s linear infinite alternate;
+  animation: eyeball 1.5s linear infinite alternate;
 }
-@-webkit-keyframes eyeball{
-    0%{left: 20px;}
-    100%{left: 1px;}
+@-webkit-keyframes eyeball {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 1px;
+  }
 }
-@-moz-keyframes eyeball{
-    0%{left: 20px;}
-    100%{left: 1px;}
+@-moz-keyframes eyeball {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 1px;
+  }
 }
-@keyframes eyeball{
-    0%{left: 20px;}
-    100%{left: 1px;}
+@keyframes eyeball {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 1px;
+  }
 }
 
 .preloader-page {
-    width: 100%;
-    height: 100%;
-    background-color: #3D4446;
-    z-index: 99999;
-    position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #3d4446;
+  z-index: 99999;
+  position: fixed;
 }
 
 .preloader-object {
-    margin-left: 50%;
-    margin-top: 25%;
+  margin-left: 50%;
+  margin-top: 25%;
 }
 
 /*----------------------------------------------------------------
@@ -297,16 +309,16 @@ a i{
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #ffffff;
-  background-color: #5CCBD5;
+  background-color: #5ccbd5;
 }
 .navbar-custom .navbar-nav > .active > a,
 .navbar-custom.affix .navbar-nav > .active > a {
   color: #ffffff;
-  background-color: #5CCBD5;
+  background-color: #5ccbd5;
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #3D4446;
+    background-color: #3d4446;
     opacity: 0.9;
     padding: 6px 0;
   }
@@ -331,7 +343,6 @@ a i{
   .navbar-custom .nav li a:focus {
     color: #cccccc;
     background-color: transparent;
-
   }
   .navbar-custom .navbar-nav > .active > a {
     background-color: transparent;
@@ -342,42 +353,41 @@ a i{
     background-color: transparent;
   }
   .navbar-custom.affix .navbar-nav > .active > a {
-    border-bottom: solid 3px #5CCBD5;
+    border-bottom: solid 3px #5ccbd5;
     background-color: transparent;
   }
 }
-@media(max-width:768px) {
-    div.navbar-collapse.collapse.in,
-    div.navbar-collapse.collapsing {
-      width: 200px;
-      max-height: 100%;
-      float: right;
-      text-align: center;
-      background-color: #3D4446;
-      box-shadow: none;
-    }
-    .navbar {
-      padding: 1.5vh 0;
-      background-color: transparent;
-      opacity: 0.9;
-      width: 100%;
-      height: 9vh;
-      border-bottom: none;
-    }
-    .navbar-custom.affix {
-      background-color: #3D4446;
-      opacity: 0.93;
-      padding: 6px 0;
-    }
+@media (max-width: 768px) {
+  div.navbar-collapse.collapse.in,
+  div.navbar-collapse.collapsing {
+    width: 200px;
+    max-height: 100%;
+    float: right;
+    text-align: center;
+    background-color: #3d4446;
+    box-shadow: none;
+  }
+  .navbar {
+    padding: 1.5vh 0;
+    background-color: transparent;
+    opacity: 0.9;
+    width: 100%;
+    height: 9vh;
+    border-bottom: none;
+  }
+  .navbar-custom.affix {
+    background-color: #3d4446;
+    opacity: 0.93;
+    padding: 6px 0;
+  }
 }
-
 
 /*----------------------------------------------------------------
     Header
 ----------------------------------------------------------------*/
 
 header {
-  background-image: url('../img/headerbackground1.jpg');
+  background-image: url("../img/headerbackground1.jpg");
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-position: center center;
@@ -545,11 +555,11 @@ section .section-subheading {
   color: #fff;
 }
 .resume .resume-heading {
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /*----------------------------------------------------------------
@@ -581,7 +591,11 @@ section .section-subheading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#portfolio
+  .portfolio-item
+  .portfolio-link
+  .portfolio-hover
+  .portfolio-hover-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -591,14 +605,29 @@ section .section-subheading {
   margin-top: -12px;
   color: #fff;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#portfolio
+  .portfolio-item
+  .portfolio-link
+  .portfolio-hover
+  .portfolio-hover-content
+  i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3 {
+#portfolio
+  .portfolio-item
+  .portfolio-link
+  .portfolio-hover
+  .portfolio-hover-content
+  h3 {
   margin: 0;
-  color: #5CCBD5;
+  color: #5ccbd5;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content p {
+#portfolio
+  .portfolio-item
+  .portfolio-link
+  .portfolio-hover
+  .portfolio-hover-content
+  p {
   color: #bbbbbb;
 }
 #portfolio * {
@@ -664,7 +693,7 @@ section .section-subheading {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #3D4446;
+  background-color: #3d4446;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -675,7 +704,7 @@ section .section-subheading {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #3D4446;
+  background-color: #3d4446;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -689,11 +718,11 @@ section .section-subheading {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #2BBFD2;
+  background: #2bbfd2;
 }
 ::selection {
   text-shadow: none;
-  background: #2BBFD2;
+  background: #2bbfd2;
 }
 img::selection {
   background: transparent;
@@ -702,7 +731,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #2BBFD2;
+  webkit-tap-highlight-color: #2bbfd2;
 }
 #portfoliomodal1 .col-lg-2 {
   padding: 0;
@@ -713,7 +742,7 @@ body {
 ----------------------------------------------------------------*/
 
 .contact {
-  background-image: url('../img/biathlon2.png');
+  background-image: url("../img/biathlon2.png");
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-position: center center;
@@ -754,7 +783,7 @@ footer span.copyright {
   padding: 5px 0;
 }
 .footer2 i {
-  color: #5CCBD5;
+  color: #5ccbd5;
 }
 ul.social-buttons {
   margin: 5px 15px 15px 10px;
@@ -777,24 +806,24 @@ ul.social-buttons i {
 
 ul.social-buttons li.twitter a:hover,
 ul.social-buttons li.twitter a:focus {
-  background-color: #81D4FD;
+  background-color: #81d4fd;
 }
 ul.social-buttons li.file a:hover,
 ul.social-buttons li.file a:focus {
-  background-color: #FE6E6E;
+  background-color: #fe6e6e;
   cursor: pointer;
 }
 ul.social-buttons li.facebook a:hover,
 ul.social-buttons li.facebook a:focus {
-  background-color: #5387BE;
+  background-color: #5387be;
 }
 ul.social-buttons li.instagram a:hover,
 ul.social-buttons li.instagram a:focus {
-  background-color: #AF6ABC;
+  background-color: #af6abc;
 }
 ul.social-buttons li.linkedin a:hover,
 ul.social-buttons li.linkedin a:focus {
-  background-color: #72AEE7;
+  background-color: #72aee7;
 }
 ul.social-buttons li.github a:hover,
 ul.social-buttons li.github a:focus {
